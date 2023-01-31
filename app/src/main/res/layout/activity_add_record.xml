@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/listViewAllRecord"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    android:backgroundTint="#D6D3D3"
+    tools:context=".AddRecord">
+
+    <TextView
+        android:id="@+id/txtViewWelcome"
+        android:layout_width="98dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="284dp"
+        android:text="Welcome"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="360dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Select Date"
+        android:inputType="date"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewWelcome" />
+
+    <EditText
+        android:id="@+id/editTxtSabqi"
+        android:layout_width="364dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Enter Sabqi"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/editTxtSabaq"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTxtSabaq"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtSabaq" />
+
+    <EditText
+        android:id="@+id/editTxtManzil"
+        android:layout_width="364dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="Enter Manzil"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/editTxtSabaq"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTxtSabaq"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtSabaq" />
+
+    <EditText
+        android:id="@+id/editTxtSabaq"
+        android:layout_width="360dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Enter Sabaq"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/editTextDate"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextDate"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
+
+    <Button
+        android:id="@+id/btnUpdateRecord"
+        android:layout_width="100dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#9C5F02"
+        android:text="Update"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAddRecord"
+        app:layout_constraintEnd_toStartOf="@+id/btnDeleteRecord"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtManzil"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnDeleteRecord"
+        android:layout_width="100dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#9C5F02"
+        android:text="Delete"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/btnUpdateRecord"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnUpdateRecord"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnAddRecord"
+        android:layout_width="100dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#9C5F02"
+        android:text="Add"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/btnUpdateRecord"
+        app:layout_constraintHorizontal_bias="0.745"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtManzil" />
+
+    <TextView
+        android:id="@+id/txtViewRecordName"
+        android:layout_width="244dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="16dp"
+        android:text="User"
+        android:textColor="#9C5F02"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txtViewWelcome"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/listViewRecord"
+        android:layout_width="362dp"
+        android:layout_height="333dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

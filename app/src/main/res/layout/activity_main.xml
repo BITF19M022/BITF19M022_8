@@ -28,6 +28,7 @@
         android:layout_marginBottom="104dp"
         android:backgroundTint="#9C5F02"
         android:text="Get Started"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

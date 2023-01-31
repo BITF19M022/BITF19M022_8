@@ -50,7 +50,7 @@ public class StudentDBHandler extends SQLiteOpenHelper {
         db.close();
     }
 
-    public List<Students> getAllEmployee()
+    public List<Students> getAllStudent()
     {
         List<Students> empList = new ArrayList<>();
         SQLiteDatabase db = this.getReadableDatabase();
